@@ -25,6 +25,19 @@ The Doxxnet logo represents **resistance against exposure** in a hyper-surveille
 
 ---
 
+## App Icon
+
+<p align="center">
+  <img src="3. DIGITAL APPLICATIONS/APP MOBILE ICON/app-icon-style-reference.png" alt="App Icon Style — White logo on dark backgrounds (Primary Usage)" width="600">
+</p>
+
+| Variant | Background | Path |
+|---------|------------|------|
+| **Solid Dark** | Dark Blue Grey `#14141E` | [`DarkBlue_gray_background/`](3.%20DIGITAL%20APPLICATIONS/APP%20MOBILE%20ICON/DarkBlue_gray_background/) |
+| **Gradient** | Magenta → Teal | [`Gradient_background/`](3.%20DIGITAL%20APPLICATIONS/APP%20MOBILE%20ICON/Gradient_background/) |
+
+---
+
 ## Logo Gallery
 
 ### Isotype (Punk Symbol)
