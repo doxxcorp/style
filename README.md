@@ -1,7 +1,7 @@
 # doxx.net Brand & Style Guide
 
 > **Status:** Active  
-> **Last Updated:** 2026-02-04  
+> **Last Updated:** 2026-02-07  
 > **Brand Guidelines:** MANZO.STUDIO 2026
 
 ---
@@ -106,6 +106,70 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/isotype-black/iso
 
 </details>
 
+#### Color White + Pink + Green (for dark backgrounds)
+
+| 64px | 128px | 256px | 512px |
+|:----:|:-----:|:-----:|:-----:|
+| ![](logo-png/isotype-color-white/isotype-color-white-64.png) | ![](logo-png/isotype-color-white/isotype-color-white-128.png) | ![](logo-png/isotype-color-white/isotype-color-white-256.png) | ![](logo-png/isotype-color-white/isotype-color-white-512.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-32.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-44.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-64.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-88.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-120.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-128.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-132.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-180.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-256.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-512.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-white/isotype-color-white-1024.png
+
+# JPEG (dark background #14141E)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-white/isotype-color-white-256-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-white/isotype-color-white-512-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-white/isotype-color-white-1024-dark-bg.jpg
+```
+
+</details>
+
+#### Color Black + Pink + Green (for light backgrounds)
+
+| 64px | 128px | 256px | 512px |
+|:----:|:-----:|:-----:|:-----:|
+| ![](logo-png/isotype-color-black/isotype-color-black-64.png) | ![](logo-png/isotype-color-black/isotype-color-black-128.png) | ![](logo-png/isotype-color-black/isotype-color-black-256.png) | ![](logo-png/isotype-color-black/isotype-color-black-512.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-32.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-44.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-64.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-88.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-120.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-128.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-132.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-180.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-256.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-512.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/isotype-color-black/isotype-color-black-1024.png
+
+# JPEG (light background #F7F7F7)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-black/isotype-color-black-256-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-black/isotype-color-black-512-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-color-black/isotype-color-black-1024-light-bg.jpg
+```
+
+</details>
+
+> **Note:** The isotype (punk symbol only) does not contain the text with pink/green accents — these color variants are identical to the solid versions. They are included for naming consistency with the source brand files.
+
 ---
 
 ### Logotype (Wordmark)
@@ -166,6 +230,60 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/logotype-black/lo
 
 </details>
 
+#### Color White + Pink + Green (for dark backgrounds)
+
+| 180w | 256w | 512w |
+|:----:|:----:|:----:|
+| ![](logo-png/logotype-color-white/logotype-color-white-180w.png) | ![](logo-png/logotype-color-white/logotype-color-white-256w.png) | ![](logo-png/logotype-color-white/logotype-color-white-512w.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-120w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-180w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-256w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-360w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-512w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-720w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-white/logotype-color-white-1024w.png
+
+# JPEG (dark background #14141E)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-white/logotype-color-white-256w-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-white/logotype-color-white-512w-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-white/logotype-color-white-1024w-dark-bg.jpg
+```
+
+</details>
+
+#### Color Black + Pink + Green (for light backgrounds)
+
+| 180w | 256w | 512w |
+|:----:|:----:|:----:|
+| ![](logo-png/logotype-color-black/logotype-color-black-180w.png) | ![](logo-png/logotype-color-black/logotype-color-black-256w.png) | ![](logo-png/logotype-color-black/logotype-color-black-512w.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-120w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-180w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-256w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-360w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-512w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-720w.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/logotype-color-black/logotype-color-black-1024w.png
+
+# JPEG (light background #F7F7F7)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-black/logotype-color-black-256w-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-black/logotype-color-black-512w-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/logotype-color-black/logotype-color-black-1024w-light-bg.jpg
+```
+
+</details>
+
 ---
 
 ### Imagotype (Full Logo)
@@ -220,6 +338,58 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-png/imagotype-black/i
 https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/imagotype-black/imagotype-black-256-light-bg.jpg
 https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/imagotype-black/imagotype-black-512-light-bg.jpg
 https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/imagotype-black/imagotype-black-1024-light-bg.jpg
+```
+
+</details>
+
+#### Color White + Pink + Green (for dark backgrounds)
+
+| 256px | 512px |
+|:-----:|:-----:|
+| ![](logo-png/imagotype-color-white/imagotype-color-white-256.png) | ![](logo-png/imagotype-color-white/imagotype-color-white-512.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-180.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-256.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-360.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-512.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-720.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-white/imagotype-color-white-1024.png
+
+# JPEG (dark background #14141E)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-white/imagotype-color-white-256-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-white/imagotype-color-white-512-dark-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-white/imagotype-color-white-1024-dark-bg.jpg
+```
+
+</details>
+
+#### Color Black + Pink + Green (for light backgrounds)
+
+| 256px | 512px |
+|:-----:|:-----:|
+| ![](logo-png/imagotype-color-black/imagotype-color-black-256.png) | ![](logo-png/imagotype-color-black/imagotype-color-black-512.png) |
+
+<details>
+<summary>Click for direct links</summary>
+
+```
+# PNG (transparent)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-180.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-256.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-360.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-512.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-720.png
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-png/imagotype-color-black/imagotype-color-black-1024.png
+
+# JPEG (light background #F7F7F7)
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-black/imagotype-color-black-256-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-black/imagotype-color-black-512-light-bg.jpg
+https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-color-black/imagotype-color-black-1024-light-bg.jpg
 ```
 
 </details>
@@ -607,10 +777,18 @@ All PNGs located in `logo-png/`:
 |--------|-------|----------|
 | `isotype-white/` | 32, 44, 64, 88, 120, 128, 132, 180, 256, 512, 1024 | Dark mode, dark backgrounds |
 | `isotype-black/` | 32, 44, 64, 88, 120, 128, 132, 180, 256, 512, 1024 | Light mode, light backgrounds |
+| `isotype-color-white/` | 32, 44, 64, 88, 120, 128, 132, 180, 256, 512, 1024 | Color variant on dark* |
+| `isotype-color-black/` | 32, 44, 64, 88, 120, 128, 132, 180, 256, 512, 1024 | Color variant on light* |
 | `logotype-white/` | 120w, 180w, 256w, 360w, 512w, 720w, 1024w | Dark mode text headers |
 | `logotype-black/` | 120w, 180w, 256w, 360w, 512w, 720w, 1024w | Light mode text headers |
+| `logotype-color-white/` | 120w, 180w, 256w, 360w, 512w, 720w, 1024w | Color (white+pink+green) on dark |
+| `logotype-color-black/` | 120w, 180w, 256w, 360w, 512w, 720w, 1024w | Color (black+pink+green) on light |
 | `imagotype-white/` | 180, 256, 360, 512, 720, 1024 | Primary logo on dark |
 | `imagotype-black/` | 180, 256, 360, 512, 720, 1024 | Primary logo on light |
+| `imagotype-color-white/` | 180, 256, 360, 512, 720, 1024 | Color (white+pink+green) on dark |
+| `imagotype-color-black/` | 180, 256, 360, 512, 720, 1024 | Color (black+pink+green) on light |
+
+*Isotype color variants are identical to solid — the punk symbol has no text with pink/green accents.*
 
 ### JPEG Assets (With Background)
 
@@ -620,10 +798,16 @@ All JPEGs located in `logo-jpg/`:
 |--------|------------|-------|----------|
 | `isotype-white/` | Dark Blue Grey (#14141E) | 256, 512, 1024 | Social media, marketing |
 | `isotype-black/` | Signal White (#F7F7F7) | 256, 512, 1024 | Print, light backgrounds |
+| `isotype-color-white/` | Dark Blue Grey (#14141E) | 256, 512, 1024 | Color variant on dark |
+| `isotype-color-black/` | Signal White (#F7F7F7) | 256, 512, 1024 | Color variant on light |
 | `logotype-white/` | Dark Blue Grey (#14141E) | 256w, 512w, 1024w | Banners, headers |
 | `logotype-black/` | Signal White (#F7F7F7) | 256w, 512w, 1024w | Print materials |
+| `logotype-color-white/` | Dark Blue Grey (#14141E) | 256w, 512w, 1024w | Color (white+pink+green) banners |
+| `logotype-color-black/` | Signal White (#F7F7F7) | 256w, 512w, 1024w | Color (black+pink+green) print |
 | `imagotype-white/` | Dark Blue Grey (#14141E) | 256, 512, 1024 | Primary marketing |
 | `imagotype-black/` | Signal White (#F7F7F7) | 256, 512, 1024 | Print, presentations |
+| `imagotype-color-white/` | Dark Blue Grey (#14141E) | 256, 512, 1024 | Color (white+pink+green) marketing |
+| `imagotype-color-black/` | Signal White (#F7F7F7) | 256, 512, 1024 | Color (black+pink+green) print |
 
 ### Common iOS Usage
 
@@ -649,17 +833,29 @@ style/
 ├── logo-png/                   # PNG assets (transparent background)
 │   ├── isotype-white/          # 32-1024px
 │   ├── isotype-black/          # 32-1024px
+│   ├── isotype-color-white/    # 32-1024px (color variant)
+│   ├── isotype-color-black/    # 32-1024px (color variant)
 │   ├── logotype-white/         # 120w-1024w
 │   ├── logotype-black/         # 120w-1024w
+│   ├── logotype-color-white/   # 120w-1024w (white+pink+green)
+│   ├── logotype-color-black/   # 120w-1024w (black+pink+green)
 │   ├── imagotype-white/        # 180-1024px
-│   └── imagotype-black/        # 180-1024px
+│   ├── imagotype-black/        # 180-1024px
+│   ├── imagotype-color-white/  # 180-1024px (white+pink+green)
+│   └── imagotype-color-black/  # 180-1024px (black+pink+green)
 ├── logo-jpg/                   # JPEG assets (with backgrounds)
 │   ├── isotype-white/          # Dark background
 │   ├── isotype-black/          # Light background
+│   ├── isotype-color-white/    # Dark background (color)
+│   ├── isotype-color-black/    # Light background (color)
 │   ├── logotype-white/         # Dark background
 │   ├── logotype-black/         # Light background
+│   ├── logotype-color-white/   # Dark background (color)
+│   ├── logotype-color-black/   # Light background (color)
 │   ├── imagotype-white/        # Dark background
-│   └── imagotype-black/        # Light background
+│   ├── imagotype-black/        # Light background
+│   ├── imagotype-color-white/  # Dark background (color)
+│   └── imagotype-color-black/  # Light background (color)
 ├── logo-swift/                 # iOS/Xcode assets
 │   ├── AppIcon.appiconset/     # 1024x1024
 │   ├── Isotype.imageset/       # @1x, @2x, @3x
