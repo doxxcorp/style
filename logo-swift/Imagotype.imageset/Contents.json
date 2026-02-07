@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "imagotype.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "imagotype@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "imagotype@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "doxx.net",
+    "version" : 1
+  }
+}
