@@ -502,6 +502,51 @@ DOXXNET uses Acumin Variable Concept – Wide to express digital authority, stru
 
 ---
 
+## 6.1 App Icon Style
+
+The app icon uses the **isotype (punk symbol)** rendered in white monochrome on a rounded rectangle with specific background and padding treatments.
+
+### Primary Usage: White Logo on Dark Backgrounds
+
+| Variant | Background | Usage |
+|---------|------------|-------|
+| **Solid Dark** | Dark Blue Grey `#14141E` | Default app icon, App Store, home screen |
+| **Gradient** | Magenta `#C82AD3` → Teal `#5BBDBA` (diagonal) | Social profiles, marketing, featured placements |
+
+### App Icon Specifications
+
+| Property | Value |
+|----------|-------|
+| Logo Color | White monochrome (no glitch effect) |
+| Corner Radius | iOS system radius (continuous curve) |
+| Logo Padding | ~22% inset from edges |
+| Logo Position | Centered vertically and horizontally |
+
+### Gradient Background Specs
+
+| Property | Value |
+|----------|-------|
+| Type | Linear gradient |
+| Angle | ~135° (top-left to bottom-right) |
+| Start Color | Mexican Pink `#C82AD3` (top-left) |
+| End Color | Neon Green `#5BBDBA` (bottom-right) |
+
+### App Icon Assets
+
+| Asset | Path | Background |
+|-------|------|------------|
+| Solid Dark | `3. DIGITAL APPLICATIONS/APP MOBILE ICON/DarkBlue_gray_background/` | `#14141E` |
+| Gradient | `3. DIGITAL APPLICATIONS/APP MOBILE ICON/Gradient_background/` | Magenta→Teal |
+| Xcode Ready | `logo-swift/AppIcon.appiconset/` | Gradient (1024×1024) |
+
+### Rules
+
+- App icons always use **solid white monochrome** isotype — never the glitch/anaglyphic treatment
+- The glitch effect (cyan + magenta offset) is reserved for **marketing materials, web, and print** — not app icons
+- Never place the full imagotype (icon + text) inside an app icon frame
+
+---
+
 ## 7.0 Icons and Emojis
 
 **NEVER EVER USE A SHIELD.** The shield icon/emoji is overused in security/VPN apps and feels generic. Use alternative icons that convey the same meaning without the cliché.
