@@ -748,6 +748,18 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 | Survival mode -- serves from cache | Survival mode: serves from cache |
 | Full mesh mode -- all tunnels communicate | Full mesh mode: all tunnels communicate |
 
+### Never Say "VPN"
+
+**Do not use the word "VPN" in any doxx.net documentation, UI, or marketing.** Use these alternatives:
+
+| Bad | Good |
+|-----|------|
+| VPN tunnel | tunnel, encrypted tunnel |
+| VPN service | network, platform |
+| VPN client | app, client |
+| Connect to the VPN | Connect to the network |
+| VPN server | server, backbone server |
+
 ---
 
 ## 8.0 Links & Navigation
