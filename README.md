@@ -736,6 +736,20 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 
 ---
 
+## 7.1 Writing Style
+
+### No Em Dashes
+
+**Do not use em dashes (`--` or `—`) in documentation, READMEs, or UI text.** Use a colon `:` instead.
+
+| Bad | Good |
+|-----|------|
+| WireGuard Authentication -- Validates public keys | WireGuard Authentication: Validates public keys |
+| Survival mode -- serves from cache | Survival mode: serves from cache |
+| Full mesh mode -- all tunnels communicate | Full mesh mode: all tunnels communicate |
+
+---
+
 ## 8.0 Links & Navigation
 
 | Type | Color | Swift | Usage |
