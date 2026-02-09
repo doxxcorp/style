@@ -396,6 +396,33 @@ https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/imagotype-co
 
 ---
 
+### Favicon (Gradient Background)
+
+Generated from the gradient app icon (`3. DIGITAL APPLICATIONS/APP MOBILE ICON/Gradient_background/PROFILE_IMAGE_X.jpg`). Use for website favicons, browser tabs, and PWA icons.
+
+| Size | Preview | Path | Usage |
+|------|---------|------|-------|
+| **favicon.ico** | ![](logo-png/favicon/favicon-32.png) | `logo-png/favicon/favicon.ico` | Browser tab (multi-res: 16, 32, 48) |
+| **16px** | | `logo-png/favicon/favicon-16.png` | Smallest browser tab |
+| **32px** | ![](logo-png/favicon/favicon-32.png) | `logo-png/favicon/favicon-32.png` | Standard browser tab |
+| **48px** | | `logo-png/favicon/favicon-48.png` | High-DPI browser tab |
+| **64px** | | `logo-png/favicon/favicon-64.png` | Windows site icon |
+| **128px** | | `logo-png/favicon/favicon-128.png` | Chrome Web Store |
+| **180px** | | `logo-png/favicon/favicon-180.png` | Apple touch icon |
+| **192px** | | `logo-png/favicon/favicon-192.png` | Android home screen |
+| **256px** | | `logo-png/favicon/favicon-256.png` | Large icon |
+| **512px** | | `logo-png/favicon/favicon-512.png` | PWA splash / Open Graph |
+
+**HTML usage:**
+```html
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon-180.png">
+```
+
+---
+
 ### iOS/Swift Assets
 
 Drop directly into Xcode Assets.xcassets:
@@ -683,6 +710,136 @@ DOXXNET uses Acumin Variable Concept – Wide to express digital authority, stru
 2. Glass highlight: `white @ 25%` → `white @ 5%` → `clear`
 3. Gradient border stroke
 
+### Glass Effect: Swift Implementation
+
+```swift
+// Layer 1: Base fill (accent → accent → black)
+RoundedRectangle(cornerRadius: 16)
+    .fill(
+        LinearGradient(
+            colors: [
+                Color.doxxAccentMagenta.opacity(0.5),
+                Color.doxxAccentMagenta.opacity(0.3),
+                Color.black.opacity(0.4)
+            ],
+            startPoint: .top,
+            endPoint: .bottom
+        )
+    )
+
+// Layer 2: Glass highlight (white reflection, top to center)
+RoundedRectangle(cornerRadius: 16)
+    .fill(
+        LinearGradient(
+            colors: [
+                Color.white.opacity(0.25),
+                Color.white.opacity(0.05),
+                Color.clear
+            ],
+            startPoint: .top,
+            endPoint: .center
+        )
+    )
+
+// Layer 3: Gradient border stroke
+RoundedRectangle(cornerRadius: 16)
+    .strokeBorder(
+        LinearGradient(
+            colors: [
+                accentColor.opacity(0.9),
+                accentColor.opacity(0.5)
+            ],
+            startPoint: .top,
+            endPoint: .bottom
+        ),
+        lineWidth: 1.5
+    )
+
+// Shadow
+.shadow(color: accentColor.opacity(0.3), radius: 8, x: 0, y: 4)
+```
+
+### Glass Effect: CSS Implementation
+
+```css
+.doxx-btn-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 0 24px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    /* Layer 1: Base fill */
+    background: linear-gradient(to bottom,
+        rgba(219,0,219,0.5) 0%,
+        rgba(219,0,219,0.3) 50%,
+        rgba(0,0,0,0.4) 100%);
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(219,0,219,0.3);
+    transition: transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+/* Layer 3: Gradient border stroke (1.5px) */
+.doxx-btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1.5px;
+    background: linear-gradient(to bottom,
+        rgba(219,0,219,0.9),
+        rgba(219,0,219,0.5));
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Layer 2: Glass highlight */
+.doxx-btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 1.5px;
+    border-radius: 10.5px;
+    background: linear-gradient(to bottom,
+        rgba(255,255,255,0.25) 0%,
+        rgba(255,255,255,0.05) 45%,
+        transparent 55%);
+    pointer-events: none;
+}
+
+/* Hover: lift + stronger shadow */
+.doxx-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(219,0,219,0.4);
+}
+
+/* Active: press scale (matches iOS 0.98) */
+.doxx-btn-primary:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(219,0,219,0.3);
+}
+```
+
+### Button Variants: Accent Color Substitution
+
+Replace `doxxAccentMagenta` / `#DB00DB` with the variant's accent color:
+
+| Variant | Accent Color | Usage |
+|---------|-------------|-------|
+| Primary | `#DB00DB` (Magenta) | Connect, Subscribe, main CTAs |
+| Secondary | `#1BC1BC` (Teal) | In-progress, secondary actions |
+| Destructive | `#FF4D6A` (Red) | Delete, disconnect |
+
 ---
 
 ## 6.1 App Icon Style
@@ -868,7 +1025,8 @@ style/
 │   ├── imagotype-white/        # 180-1024px
 │   ├── imagotype-black/        # 180-1024px
 │   ├── imagotype-color-white/  # 180-1024px (white+pink+green)
-│   └── imagotype-color-black/  # 180-1024px (black+pink+green)
+│   ├── imagotype-color-black/  # 180-1024px (black+pink+green)
+│   └── favicon/                # 16-512px + favicon.ico (gradient background)
 ├── logo-jpg/                   # JPEG assets (with backgrounds)
 │   ├── isotype-white/          # Dark background
 │   ├── isotype-black/          # Light background
