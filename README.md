@@ -716,6 +716,27 @@ These are the canonical brand colors from MANZO.STUDIO:
 | ![](https://img.shields.io/badge/-%20-1BC1BC) | Status (active) | `#1BC1BC` | `doxxAccentTeal` | Filled indicators |
 | ![](https://img.shields.io/badge/-%20-333333) | Status (empty) | `#333333` | `.white.opacity(0.2)` | Unfilled states |
 
+### Icon Interactive States
+
+Icons change color based on whether they are interactive (tappable/clickable) or display-only:
+
+| State | Color | Swift | Usage |
+|-------|-------|-------|-------|
+| **Non-interactive (default)** | Teal `#1BC1BC` | `.doxxAccentTeal` | Display-only icons, informational indicators, section headers, static labels |
+| **Interactive (tapped/clicked)** | White `#FFFFFF` | `.white` | Buttons, tappable rows, active selections, toolbar actions |
+
+**Rule:** If an icon is purely decorative or informational (not tappable), it must use `doxxAccentTeal`. Only icons that respond to user interaction (tap, press, click) should use white. This creates a clear visual distinction between "this is information" (teal) and "this is actionable" (white).
+
+```swift
+// Display-only icon (settings section header, policy description, etc.)
+Image(systemName: "key.horizontal.fill")
+    .foregroundColor(.doxxAccentTeal)
+
+// Interactive icon (toolbar button, tappable row, etc.)
+Image(systemName: "arrow.clockwise")
+    .foregroundColor(.white)
+```
+
 ### Borders
 
 | Color | Name | HEX | Swift | CSS | Usage |
