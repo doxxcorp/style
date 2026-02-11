@@ -46,9 +46,28 @@ Use for: App icons, favicons, avatars, watermarks, UI indicators
 
 #### White (for dark backgrounds)
 
-| 64px | 128px | 256px | 512px |
-|:----:|:-----:|:-----:|:-----:|
-| ![](logo-png/isotype-white/isotype-white-64.png) | ![](logo-png/isotype-white/isotype-white-128.png) | ![](logo-png/isotype-white/isotype-white-256.png) | ![](logo-png/isotype-white/isotype-white-512.png) |
+<table>
+  <tr>
+    <th>64px</th>
+    <th>128px</th>
+    <th>256px</th>
+    <th>512px</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:16px;">
+      <img src="logo-png/isotype-white/isotype-white-64.png" width="64">
+    </td>
+    <td align="center" style="background:#111; padding:16px;">
+      <img src="logo-png/isotype-white/isotype-white-128.png" width="128">
+    </td>
+    <td align="center" style="background:#111; padding:16px;">
+      <img src="logo-png/isotype-white/isotype-white-256.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:16px;">
+      <img src="logo-png/isotype-white/isotype-white-512.png" width="512">
+    </td>
+  </tr>
+</table>
 
 <details>
 <summary>Click for direct links</summary>
@@ -108,9 +127,29 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/isotype-black/iso
 
 #### Color White + Pink + Green (for dark backgrounds)
 
-| 64px | 128px | 256px | 512px |
-|:----:|:-----:|:-----:|:-----:|
-| ![](logo-png/isotype-color-white/isotype-color-white-64.png) | ![](logo-png/isotype-color-white/isotype-color-white-128.png) | ![](logo-png/isotype-color-white/isotype-color-white-256.png) | ![](logo-png/isotype-color-white/isotype-color-white-512.png) |
+<table>
+  <tr>
+    <th>64px</th>
+    <th>128px</th>
+    <th>256px</th>
+    <th>512px</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/isotype-color-white/isotype-color-white-64.png" width="64">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/isotype-color-white/isotype-color-white-128.png" width="128">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/isotype-color-white/isotype-color-white-256.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/isotype-color-white/isotype-color-white-512.png" width="512">
+    </td>
+  </tr>
+</table>
+
 
 <details>
 <summary>Click for direct links</summary>
@@ -178,9 +217,25 @@ Use for: Navigation bars, headers, editorial layouts, legal documents
 
 #### White (for dark backgrounds)
 
-| 180w | 256w | 512w |
-|:----:|:----:|:----:|
-| ![](logo-png/logotype-white/logotype-white-180w.png) | ![](logo-png/logotype-white/logotype-white-256w.png) | ![](logo-png/logotype-white/logotype-white-512w.png) |
+<table>
+  <tr>
+    <th>180w</th>
+    <th>256w</th>
+    <th>512w</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/logotype-white/logotype-white-180w.png" width="180">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/logotype-white/logotype-white-256w.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-png/logotype-white/logotype-white-512w.png" width="512">
+    </td>
+  </tr>
+</table>
+
 
 <details>
 <summary>Click for direct links</summary>
@@ -232,9 +287,25 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/logotype-black/lo
 
 #### Color White + Pink + Green (for dark backgrounds)
 
-| 180w | 256w | 512w |
-|:----:|:----:|:----:|
-| ![](logo-png/logotype-color-white/logotype-color-white-180w.png) | ![](logo-png/logotype-color-white/logotype-color-white-256w.png) | ![](logo-png/logotype-color-white/logotype-color-white-512w.png) |
+<table>
+  <tr>
+    <th>180w</th>
+    <th>256w</th>
+    <th>512w</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:24px; height:160px;">
+      <img src="logo-png/logotype-color-white/logotype-color-white-180w.png" width="180">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:160px;">
+      <img src="logo-png/logotype-color-white/logotype-color-white-256w.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:160px;">
+      <img src="logo-png/logotype-color-white/logotype-color-white-512w.png" width="512">
+    </td>
+  </tr>
+</table>
+
 
 <details>
 <summary>Click for direct links</summary>
@@ -292,9 +363,21 @@ Use for: Website headers, presentations, marketing materials, print
 
 #### White (for dark backgrounds)
 
-| 256px | 512px |
-|:-----:|:-----:|
-| ![](logo-png/imagotype-white/imagotype-white-256.png) | ![](logo-png/imagotype-white/imagotype-white-512.png) |
+<table>
+  <tr>
+    <th>256px</th>
+    <th>512px</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:24px; height:180px;">
+      <img src="logo-png/imagotype-white/imagotype-white-256.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:180px;">
+      <img src="logo-png/imagotype-white/imagotype-white-512.png" width="512">
+    </td>
+  </tr>
+</table>
+
 
 <details>
 <summary>Click for direct links</summary>
@@ -344,9 +427,21 @@ https://raw.githubusercontent.com/doxxcorp/style/main/logo-jpg/imagotype-black/i
 
 #### Color White + Pink + Green (for dark backgrounds)
 
-| 256px | 512px |
-|:-----:|:-----:|
-| ![](logo-png/imagotype-color-white/imagotype-color-white-256.png) | ![](logo-png/imagotype-color-white/imagotype-color-white-512.png) |
+<table>
+  <tr>
+    <th>256px</th>
+    <th>512px</th>
+  </tr>
+  <tr>
+    <td align="center" style="background:#111; padding:24px; height:180px;">
+      <img src="logo-png/imagotype-color-white/imagotype-color-white-256.png" width="256">
+    </td>
+    <td align="center" style="background:#111; padding:24px; height:180px;">
+      <img src="logo-png/imagotype-color-white/imagotype-color-white-512.png" width="512">
+    </td>
+  </tr>
+</table>
+
 
 <details>
 <summary>Click for direct links</summary>
@@ -427,12 +522,42 @@ Generated from the gradient app icon (`3. DIGITAL APPLICATIONS/APP MOBILE ICON/G
 
 Drop directly into Xcode Assets.xcassets:
 
-| Asset | Preview | Path |
-|-------|---------|------|
-| **AppIcon** | ![](logo-swift/AppIcon.appiconset/1024.png) | `logo-swift/AppIcon.appiconset/` |
-| **Isotype** | ![](logo-swift/Isotype.imageset/isotype@2x.png) | `logo-swift/Isotype.imageset/` |
-| **Logotype** | ![](logo-swift/Logotype.imageset/logotype@2x.png) | `logo-swift/Logotype.imageset/` |
-| **Imagotype** | ![](logo-swift/Imagotype.imageset/imagotype@2x.png) | `logo-swift/Imagotype.imageset/` |
+<table>
+  <tr>
+    <th align="left">Asset</th>
+    <th align="center">Preview</th>
+    <th align="left">Path</th>
+  </tr>
+  <tr>
+    <td><strong>AppIcon</strong></td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-swift/AppIcon.appiconset/1024.png" width="128">
+    </td>
+    <td><code>logo-swift/AppIcon.appiconset/</code></td>
+  </tr>
+  <tr>
+    <td><strong>Isotype</strong></td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-swift/Isotype.imageset/isotype@2x.png" width="128">
+    </td>
+    <td><code>logo-swift/Isotype.imageset/</code></td>
+  </tr>
+  <tr>
+    <td><strong>Logotype</strong></td>
+    <td align="center" style="background:#111; padding:24px; height:140px;">
+      <img src="logo-swift/Logotype.imageset/logotype@2x.png" width="180">
+    </td>
+    <td><code>logo-swift/Logotype.imageset/</code></td>
+  </tr>
+  <tr>
+    <td><strong>Imagotype</strong></td>
+    <td align="center" style="background:#111; padding:24px; height:160px;">
+      <img src="logo-swift/Imagotype.imageset/imagotype@2x.png" width="200">
+    </td>
+    <td><code>logo-swift/Imagotype.imageset/</code></td>
+  </tr>
+</table>
+
 
 ---
 
