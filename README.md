@@ -1039,11 +1039,41 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 
 ---
 
-## 7.1 Writing Style
+## 7.1 Writing Style & Naming Conventions
+
+### Product & Company Names
+
+**The product is `doxx.net`. The brand is `doxxnet`. The company is `doxx.net corp`.**
+
+These are the official forms. Use them consistently across all documentation, code, UI, and marketing.
+
+| Context | Correct | Incorrect |
+|---------|---------|-----------|
+| Product name (in text) | doxx.net | Doxx.net, DOXX.NET, doxx, Doxx |
+| Brand name (logos, titles) | DOXXNET, doxxnet | DoxxNet, Doxx Net, doxx.net (in logos) |
+| Company name | doxx.net corp | Doxx.net Corp, DOXX.NET Corp, doxxnet corp |
+| iOS app bundle | net.doxx | - |
+| GitHub org | doxxcorp | - |
+| Code references | `doxx.net`, `doxxnet` | `doxx`, `DOXX` |
+
+### AI Context Rules
+
+When AI assistants (Cursor, Copilot, ChatGPT, etc.) generate documentation, code comments, commit messages, or UI text for doxx.net projects, they must follow these rules:
+
+1. **Product name is `doxx.net`** (lowercase, with dot): use in documentation, READMEs, code comments, error messages, and all prose
+2. **Brand name is `doxxnet`** (one word, no dot): use in logos, marketing headlines, Swift/CSS variable prefixes (`doxxAccentTeal`, `doxxDarkBackground`), and brand contexts
+3. **Never capitalize as `Doxx.net`** unless starting a sentence, and even then prefer restructuring the sentence to avoid it
+4. **Copyright lines use:** `doxx.net corp` (all lowercase)
+5. **The punk icon is called the "isotype"**, not "logo", "icon", or "mascot"
+6. **The text wordmark is called the "logotype"**, not "text logo" or "brand name"
+7. **The combined symbol+text is called the "imagotype"**, not "full logo" or "logo with text"
+8. **Never use "VPN"** anywhere (see below)
+9. **Never use em dashes** (see below)
+10. **Never use a shield icon/emoji** in any context
 
 ### No Em Dashes
 
-**Do not use em dashes (`--` or `—`) in documentation, READMEs, or UI text.** Use a colon `:` instead.
+**Do not use em dashes (`--` or `---`) in documentation, READMEs, or UI text.** Use a colon `:` instead.
 
 | Bad | Good |
 |-----|------|
@@ -1053,15 +1083,16 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 
 ### Never Say "VPN"
 
-**Do not use the word "VPN" in any doxx.net documentation, UI, or marketing.** Use these alternatives:
+**Do not use the word "VPN" in any doxx.net documentation, UI, or marketing.** doxx.net is a secure networking platform, not a "VPN service." Use these alternatives:
 
 | Bad | Good |
 |-----|------|
 | VPN tunnel | tunnel, encrypted tunnel |
-| VPN service | network, platform |
+| VPN service | network, platform, secure network |
 | VPN client | app, client |
 | Connect to the VPN | Connect to the network |
 | VPN server | server, backbone server |
+| VPN provider | doxx.net, the platform |
 
 ---
 
