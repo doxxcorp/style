@@ -18,8 +18,8 @@ Unauthorized use, reproduction, or distribution of these materials is strictly p
 The Doxxnet logo represents **resistance against exposure** in a hyper-surveilled digital world.
 
 - **The punk figure** symbolizes rebellion, independence, and defiance toward systems that exploit personal data
-- **The line covering the eyes** is a metaphor for anonymity and protection—blocking identification, facial recognition, and unwanted visibility
-- **The punk aesthetic** connects to digital counterculture and hacktivism—communities that challenge authority, value privacy, and reject mass surveillance
+- **The line covering the eyes** is a metaphor for anonymity and protection: blocking identification, facial recognition, and unwanted visibility
+- **The punk aesthetic** connects to digital counterculture and hacktivism: communities that challenge authority, value privacy, and reject mass surveillance
 
 > *"Privacy is a right, not a privilege."*
 
@@ -28,7 +28,7 @@ The Doxxnet logo represents **resistance against exposure** in a hyper-surveille
 ## App Icon
 
 <p align="center">
-  <img src="3. DIGITAL APPLICATIONS/APP MOBILE ICON/app-icon-style-reference.png" alt="App Icon Style — White logo on dark backgrounds (Primary Usage)" width="600">
+  <img src="3. DIGITAL APPLICATIONS/APP MOBILE ICON/app-icon-style-reference.png" alt="App Icon Style: White logo on dark backgrounds (Primary Usage)" width="600">
 </p>
 
 | Variant | Background | Path |
@@ -207,7 +207,7 @@ https://raw.githubusercontent.com/doxx/doxx.net-style/main/logo-jpg/isotype-colo
 
 </details>
 
-> **Note:** The isotype (punk symbol only) does not contain the text with pink/green accents — these color variants are identical to the solid versions. They are included for naming consistency with the source brand files.
+> **Note:** The isotype (punk symbol only) does not contain the text with pink/green accents: these color variants are identical to the solid versions. They are included for naming consistency with the source brand files.
 
 ---
 
@@ -1027,8 +1027,8 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 
 ### Rules
 
-- App icons always use **solid white monochrome** isotype — never the glitch/anaglyphic treatment
-- The glitch effect (cyan + magenta offset) is reserved for **marketing materials, web, and print** — not app icons
+- App icons always use **solid white monochrome** isotype: never the glitch/anaglyphic treatment
+- The glitch effect (cyan + magenta offset) is reserved for **marketing materials, web, and print**: not app icons
 - Never place the full imagotype (icon + text) inside an app icon frame
 
 ---
@@ -1117,7 +1117,7 @@ All PNGs located in `logo-png/`:
 | `imagotype-color-white/` | 180, 256, 360, 512, 720, 1024 | Color (white+pink+green) on dark |
 | `imagotype-color-black/` | 180, 256, 360, 512, 720, 1024 | Color (black+pink+green) on light |
 
-*Isotype color variants are identical to solid — the punk symbol has no text with pink/green accents.*
+*Isotype color variants are identical to solid: the punk symbol has no text with pink/green accents.*
 
 ### JPEG Assets (With Background)
 
