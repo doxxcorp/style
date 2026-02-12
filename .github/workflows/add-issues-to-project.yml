@@ -1,0 +1,32 @@
+name: Add new issues to Doxx Hub Project
+
+on:
+  issues:
+    # types: [opened]          # Trigger on new issues
+    # Optional: also trigger on reopen or label events
+    types: [opened, reopened, labeled]
+
+  # Optional: include pull requests too
+  # pull_request:
+  #   types: [opened]
+
+jobs:
+  add-to-project:
+    name: Add to central Darknet Hub project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to organization project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          # REQUIRED: Full URL of your org-level project
+          project-url: https://github.com/orgs/doxxcorp/projects/4
+
+          # REQUIRED: PAT with project write access
+          github-token: ${{ secrets.ADD_ISSUE_TO_PROJECT }}
+
+          # Optional: only add issues with specific labels (examples)
+          # labeled: bug, security, enhancement, triage
+          # label-operator: OR   # or AND / NOT
+
+          # Optional: skip issues with these labels
+          # exclude-labeled: wontfix, duplicate, invalid, low-priority
