@@ -688,8 +688,8 @@ These are the canonical brand colors from MANZO.STUDIO:
 |-------|------|-----|-------|-----|-------|
 | ![](https://img.shields.io/badge/-%20-DB00DB) | Magenta | `#DB00DB` | `doxxAccentMagenta` | `--accent-magenta` | Primary CTA, brand borders |
 | ![](https://img.shields.io/badge/-%20-1BC1BC) | Teal | `#1BC1BC` | `doxxAccentTeal` | `--accent-teal` | Secondary, success, active |
-| ![](https://img.shields.io/badge/-%20-FF4D6A) | Red | `#FF4D6A` | `doxxAccentRed` | `--accent-red` | Error, destructive |
-| ![](https://img.shields.io/badge/-%20-FFD54F) | Yellow | `#FFD54F` | `doxxAccentYellow` | `--accent-yellow` | Warning, caution, beta |
+| ![](https://img.shields.io/badge/-%20-FF4D6A) | Red | `#FF4D6A` | `doxxAccentRed` | `--accent-red` | Error, destructive, warnings, caution boxes |
+| ![](https://img.shields.io/badge/-%20-FFD54F) | Yellow | `#FFD54F` | `doxxAccentYellow` | `--accent-yellow` | Latency indicators, beta badges, LAN labels |
 
 ### Text Hierarchy
 
@@ -1036,6 +1036,54 @@ The app icon uses the **isotype (punk symbol)** rendered in white monochrome on 
 ## 7.0 Icons and Emojis
 
 **NEVER EVER USE A SHIELD.** The shield icon/emoji is overused in security/VPN apps and feels generic. Use alternative icons that convey the same meaning without the cliché.
+
+### Warning & Caution Boxes
+
+**Use `doxxAccentRed` (#FF4D6A) for all warning, caution, and responsible-use notices.** Do NOT use yellow, brown, amber, or orange for warnings. The yellow accent (`doxxAccentYellow`) is reserved for latency indicators, beta badges, and LAN status labels only.
+
+**Use the custom `settings_caution` icon** (from the database-driven icon system) for warning boxes. Do NOT use SF Symbol emoji like `exclamationmark.triangle.fill` or any system caution emoji. Our icon system exists for a reason: use it.
+
+| Element | Value | Swift |
+|---------|-------|-------|
+| **Icon** | `settings_caution` (PNG from icon system) | `Image("settings_caution").renderingMode(.original)` |
+| **Background** | Red @ 10% opacity | `Color.doxxAccentRed.opacity(0.1)` |
+| **Border** | Red @ 30% opacity, 1pt | `.stroke(Color.doxxAccentRed.opacity(0.3), lineWidth: 1)` |
+| **Title** | White, `.headline` | `.foregroundColor(.white)` |
+| **Body text** | Secondary | `.foregroundColor(.doxxTextSecondary)` |
+| **Corner radius** | 12pt | `.cornerRadius(12)` |
+
+```swift
+// WARNING BOX: Standard pattern for all caution/warning/responsible-use notices
+VStack(alignment: .leading, spacing: 8) {
+    HStack(spacing: 8) {
+        Image("settings_caution")
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 24, height: 24)
+        Text("Warning Title")
+            .font(.headline)
+            .foregroundColor(.white)
+    }
+    Text("Warning body text goes here.")
+        .font(.subheadline)
+        .foregroundColor(.doxxTextSecondary)
+}
+.padding(16)
+.background(Color.doxxAccentRed.opacity(0.1))
+.cornerRadius(12)
+.overlay(
+    RoundedRectangle(cornerRadius: 12)
+        .stroke(Color.doxxAccentRed.opacity(0.3), lineWidth: 1)
+)
+```
+
+### AI Rules for Icons
+
+1. **Never use SF Symbol emoji as icons** in settings, warning boxes, or section headers. Use the database-driven icon system (`settings_*` or `category_*` assets). See `AI_CONTEXT/UPDATING-ICONS.md` for how to add new icons.
+2. **Never use yellow/amber/brown for warnings.** Use `doxxAccentRed`.
+3. **Never use a shield icon or emoji** in any context.
+4. **Never hardcode icon paths.** All icons come from the `dn_stats_defs` database and are synced via `update-build-data.sh`.
 
 ---
 
