@@ -828,7 +828,11 @@ Universal status colors for tunnel state, server heartbeats, and connection heal
 
 ### Security Event Categories
 
-Colors for security dashboard category pills and event counters.
+> **Note:** Category colors in the UI are driven by
+> [`stats_definitions.json`](https://github.com/doxxcorp/doxx-www/blob/main/www/a0x13.doxx.net/ops/pages/stats_definitions.json)
+> (`color_dark_theme` per event type/category). The table below is a
+> reference snapshot — update `stats_definitions.json` for changes to
+> take effect.
 
 | Color | Name | HEX | CSS | Category |
 |-------|------|-----|-----|----------|
@@ -837,7 +841,7 @@ Colors for security dashboard category pills and event counters.
 | ![](https://img.shields.io/badge/-%20-ec4899) | Phishing | `#ec4899` | `--cat-phishing` | Phishing domain blocks |
 | ![](https://img.shields.io/badge/-%20-a855f7) | Adult | `#a855f7` | `--cat-adult` | Adult content DNS blocks |
 | ![](https://img.shields.io/badge/-%20-84cc16) | Social | `#84cc16` | `--cat-social` | Social media DNS blocks |
-| ![](https://img.shields.io/badge/-%20-4ade80) | Mixed | `#4ade80` | `--cat-mixed` | Mixed/general DNS blocks |
+| ![](https://img.shields.io/badge/-%20-71d358) | Mixed | `#71d358` | `--cat-mixed` | Mixed/general DNS blocks |
 | ![](https://img.shields.io/badge/-%20-f68d0b) | Malware | `#f68d0b` | `--cat-malware` | Malware domain blocks |
 | ![](https://img.shields.io/badge/-%20-7949a7) | Port Scans | `#7949a7` | `--cat-port-scans` | Port scanning detection |
 | ![](https://img.shields.io/badge/-%20-d92e29) | Exploits | `#d92e29` | `--cat-exploits` | Exploit attempts |
