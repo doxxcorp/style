@@ -803,7 +803,9 @@ Retro terminal/matrix aesthetic used in security console, status pages, and real
 | ![](https://img.shields.io/badge/-%20-0a0a0f) | Terminal BG | `#0a0a0f` | `--terminal-bg` | Near-black chart/console background |
 | | Terminal Border | `rgba(0, 255, 0, 0.3)` | `--terminal-border` | Container borders (green-tinted) |
 | | Terminal Dim | `rgba(0, 255, 0, 0.6)` | `--terminal-dim` | Section headers, muted labels |
+| | Terminal Label | `rgba(0, 255, 0, 0.7)` | `--terminal-label` | Canvas axis labels, legend text, status bar |
 | | Terminal Faint | `rgba(0, 255, 0, 0.05)` | `--terminal-faint` | Canvas grid fill, hover rows |
+| | Terminal Divider | `rgba(0, 255, 0, 0.2)` | `--terminal-divider` | Section dividers, inner borders |
 | | Terminal Grid | `rgba(0, 255, 0, 0.1)` | `--terminal-grid` | Grid lines, subtle separators |
 | ![](https://img.shields.io/badge/-%20-80a1ad) | Timestamp | `#80a1ad` | `--terminal-timestamp` | Timestamps in event feeds |
 
@@ -848,6 +850,26 @@ Universal status colors for tunnel state, server heartbeats, and connection heal
 | ![](https://img.shields.io/badge/-%20-f5c122) | DNS Bypass | `#f5c122` | `--cat-dns-bypass` | DoH/DoT bypass attempts |
 | ![](https://img.shields.io/badge/-%20-57b7ed) | DNSSEC | `#57b7ed` | `--cat-dnssec` | DNSSEC validation failures |
 | ![](https://img.shields.io/badge/-%20-9b9b9b) | Other | `#9b9b9b` | `--cat-other` | Uncategorized events |
+
+### Event Type Colors
+
+Top-level event type colors used in stats dashboards, security consoles, and notification badges. Each color is sourced from an existing palette entry for visual consistency.
+
+> **Note:** These colors are consumed by
+> [`stats_definitions.json`](https://github.com/doxxcorp/doxx-www/blob/main/www/a0x13.doxx.net/ops/pages/stats_definitions.json)
+> (`color_dark_theme` per event type). Update
+> `stats_definitions.json` (or the stats server DB) for changes to
+> take effect in clients.
+
+| Color | Event Type | HEX | CSS | Sourced From |
+|-------|------------|-----|-----|--------------|
+| ![](https://img.shields.io/badge/-%20-01cdfe) | Bandwidth | `#01CDFE` | `--evt-bandwidth` | Bandwidth Aggregate Download |
+| ![](https://img.shields.io/badge/-%20-f68d0b) | Connection Issue | `#F68D0B` | `--evt-connection-issue` | Status: Sleeping |
+| ![](https://img.shields.io/badge/-%20-1bc1bc) | DNS Block | `#1BC1BC` | `--evt-dns-block` | Accent: Teal |
+| ![](https://img.shields.io/badge/-%20-4caf50) | Health Event | `#4CAF50` | `--evt-health-event` | Status: Online |
+| ![](https://img.shields.io/badge/-%20-d1c7ff) | Keep Alive | `#D1C7FF` | `--evt-keep-alive` | Text Secondary |
+| ![](https://img.shields.io/badge/-%20-b967ff) | Key Rotation | `#B967FF` | `--evt-key-rotation` | Bandwidth Tunnel 2 |
+| ![](https://img.shields.io/badge/-%20-ff4d6a) | Security Event | `#FF4D6A` | `--evt-security-event` | Accent: Red |
 
 ### Topology
 
