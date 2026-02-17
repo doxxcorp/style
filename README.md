@@ -793,6 +793,66 @@ Discrete color bands for ICMP ping visualization (teal → yellow → red progre
 | ![](https://img.shields.io/badge/-%20-FFD54F) | Yellow | `#FFD54F` | 15-30ms |
 | ![](https://img.shields.io/badge/-%20-FF4D6A) | Red | `#FF4D6A` | > 30ms |
 
+### Terminal Style
+
+Retro terminal/matrix aesthetic used in security console, status pages, and real-time event feeds. Dark near-black background with phosphor-green accents, rounded containers with green-tinted borders.
+
+| Color | Name | HEX / Value | CSS | Usage |
+|-------|------|-------------|-----|-------|
+| ![](https://img.shields.io/badge/-%20-00ff00) | Terminal Green | `#00ff00` | `--terminal-green` | Primary text, borders, status |
+| ![](https://img.shields.io/badge/-%20-0a0a0f) | Terminal BG | `#0a0a0f` | `--terminal-bg` | Near-black chart/console background |
+| | Terminal Border | `rgba(0, 255, 0, 0.3)` | `--terminal-border` | Container borders (green-tinted) |
+| | Terminal Dim | `rgba(0, 255, 0, 0.6)` | `--terminal-dim` | Section headers, muted labels |
+| | Terminal Faint | `rgba(0, 255, 0, 0.05)` | `--terminal-faint` | Canvas grid fill, hover rows |
+| | Terminal Grid | `rgba(0, 255, 0, 0.1)` | `--terminal-grid` | Grid lines, subtle separators |
+| ![](https://img.shields.io/badge/-%20-80a1ad) | Timestamp | `#80a1ad` | `--terminal-timestamp` | Timestamps in event feeds |
+
+**Terminal Container Pattern:**
+- Background: `--terminal-bg` (`#0a0a0f`)
+- Border: `1px solid` `--terminal-border` (`rgba(0, 255, 0, 0.3)`)
+- Border Radius: `12px` (rounded)
+- Box Shadow: `0 0 20px rgba(0, 255, 0, 0.2)` (green glow)
+- Font: `--font-mono` (JetBrains Mono)
+
+### Status Indicators
+
+Universal status colors for tunnel state, server heartbeats, and connection health.
+
+| Color | Name | HEX | CSS | Usage |
+|-------|------|-----|-----|-------|
+| ![](https://img.shields.io/badge/-%20-4caf50) | Online | `#4caf50` | `--status-online` | Active tunnels, connected servers |
+| ![](https://img.shields.io/badge/-%20-9b9b9b) | Offline | `#9b9b9b` | `--status-offline` | Inactive tunnels, unresponsive servers |
+| ![](https://img.shields.io/badge/-%20-f68d0b) | Sleeping | `#f68d0b` | `--status-sleeping` | Idle tunnels (no recent traffic) |
+| ![](https://img.shields.io/badge/-%20-ff4d6a) | Error | `#ff4d6a` | `--status-error` | Down links, failed connections |
+| ![](https://img.shields.io/badge/-%20-f5c122) | Unknown | `#f5c122` | `--status-unknown` | Unexpected servers, unresolved state |
+
+### Security Event Categories
+
+Colors for security dashboard category pills and event counters.
+
+| Color | Name | HEX | CSS | Category |
+|-------|------|-----|-----|----------|
+| ![](https://img.shields.io/badge/-%20-ff4d6a) | Ads | `#ff4d6a` | `--cat-ads` | Ad/tracker DNS blocks |
+| ![](https://img.shields.io/badge/-%20-f68d0b) | Malware | `#f68d0b` | `--cat-malware` | Malware domain blocks |
+| ![](https://img.shields.io/badge/-%20-7949a7) | Port Scans | `#7949a7` | `--cat-port-scans` | Port scanning detection |
+| ![](https://img.shields.io/badge/-%20-d92e29) | Exploits | `#d92e29` | `--cat-exploits` | Exploit attempts |
+| ![](https://img.shields.io/badge/-%20-f5c122) | DNS Bypass | `#f5c122` | `--cat-dns-bypass` | DoH/DoT bypass attempts |
+| ![](https://img.shields.io/badge/-%20-57b7ed) | DNSSEC | `#57b7ed` | `--cat-dnssec` | DNSSEC validation failures |
+| ![](https://img.shields.io/badge/-%20-9b9b9b) | Other | `#9b9b9b` | `--cat-other` | Uncategorized events |
+
+### Topology
+
+Colors for network topology visualization (backbone mesh, tunnel maps).
+
+| Color | Name | HEX | CSS | Usage |
+|-------|------|-----|-----|-------|
+| ![](https://img.shields.io/badge/-%20-667eea) | Cloud | `#667eea` | `--topo-cloud` | Central cloud node, gradient start |
+| ![](https://img.shields.io/badge/-%20-764ba2) | Cloud End | `#764ba2` | `--topo-cloud-end` | Background gradient end |
+| ![](https://img.shields.io/badge/-%20-d1c7ff) | Backbone Link | `#d1c7ff` | `--topo-backbone-link` | Inter-site backbone connections |
+| ![](https://img.shields.io/badge/-%20-01cdfe) | Tunnel Link | `#01cdfe` | `--topo-tunnel-link` | Tunnel-to-location connections |
+
+**Topology Gradient:** `linear-gradient(135deg, #667eea 0%, #764ba2 100%)` — used for mesh page backgrounds and CTA buttons within topology views.
+
 ---
 
 ## 5.0 Typography System
