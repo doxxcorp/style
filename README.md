@@ -833,6 +833,10 @@ Colors for security dashboard category pills and event counters.
 | Color | Name | HEX | CSS | Category |
 |-------|------|-----|-----|----------|
 | ![](https://img.shields.io/badge/-%20-ff4d6a) | Ads | `#ff4d6a` | `--cat-ads` | Ad/tracker DNS blocks |
+| ![](https://img.shields.io/badge/-%20-14b8a6) | Tracking | `#14b8a6` | `--cat-tracking` | Tracking & analytics DNS blocks |
+| ![](https://img.shields.io/badge/-%20-ec4899) | Phishing | `#ec4899` | `--cat-phishing` | Phishing domain blocks |
+| ![](https://img.shields.io/badge/-%20-a855f7) | Adult | `#a855f7` | `--cat-adult` | Adult content DNS blocks |
+| ![](https://img.shields.io/badge/-%20-84cc16) | Social | `#84cc16` | `--cat-social` | Social media DNS blocks |
 | ![](https://img.shields.io/badge/-%20-f68d0b) | Malware | `#f68d0b` | `--cat-malware` | Malware domain blocks |
 | ![](https://img.shields.io/badge/-%20-7949a7) | Port Scans | `#7949a7` | `--cat-port-scans` | Port scanning detection |
 | ![](https://img.shields.io/badge/-%20-d92e29) | Exploits | `#d92e29` | `--cat-exploits` | Exploit attempts |
