@@ -1235,6 +1235,87 @@ When AI assistants (Cursor, Copilot, ChatGPT, etc.) generate documentation, code
 
 ---
 
+## 7.2 User Input Editing Pattern
+
+All editable text fields in settings follow this pattern:
+
+### Behavior
+
+1. **Default state:** Text field shows the current saved value. No Save button visible.
+2. **Editing:** User types in the field. If the value differs from the saved value, a Save button appears next to the field.
+3. **Saving:** User taps Save. Button shows "Saving..." with a spinner. Field is disabled during save.
+4. **Saved:** On success, the Save button disappears (the field value now matches the saved value). No "Saved" confirmation state, no green, no timer. The absence of the button IS the confirmation.
+5. **Error:** Save button reappears. User can retry.
+
+### Rules
+
+- Save button uses `doxxAccentTeal` background, white text, `.subheadline` `.medium`
+- Save button is **hidden** when the field value matches the saved value (not disabled, not dimmed: hidden)
+- Save button appears **only** when the field is dirty (value != saved value) and non-empty
+- No green color for success states. Teal is the action/success color per brand guidelines
+- Spinner uses `CircularProgressViewStyle(tint: .white)` scaled to 0.7
+
+### Swift Implementation
+
+```swift
+@State private var fieldValue: String = ""
+@State private var savedValue: String = ""
+@State private var isSaving: Bool = false
+
+// In the view body:
+HStack(spacing: 8) {
+    TextField("Placeholder", text: $fieldValue)
+        .textFieldStyle(.plain)
+        .font(.body)
+        .foregroundColor(.white)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(Color.white.opacity(0.08))
+        .cornerRadius(8)
+
+    if fieldValue != savedValue && !fieldValue.isEmpty {
+        Button {
+            Task { await save() }
+        } label: {
+            HStack(spacing: 4) {
+                if isSaving {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .scaleEffect(0.7)
+                }
+                Text(isSaving ? "Saving..." : "Save")
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .background(Color.doxxAccentTeal)
+            .cornerRadius(8)
+        }
+        .disabled(isSaving)
+    }
+}
+
+// Save function:
+func save() async {
+    isSaving = true
+    defer { isSaving = false }
+    // ... API call ...
+    // On success:
+    savedValue = fieldValue
+}
+```
+
+### Where This Pattern is Used
+
+- Settings > NetDrop > Your Share Profile (profile name)
+- Settings > NetDrop > Your Devices (device names, each device has its own inline field)
+- Settings > Your Profile > Device Name
+- Settings > Developer Debug > Device Identification
+
+---
+
 ## 8.0 Links & Navigation
 
 | Type | Color | Swift | Usage |
