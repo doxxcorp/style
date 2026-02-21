@@ -8,7 +8,7 @@
 
 **Columns:**
 - **Stats Ref**: whether `stats_definitions.json` has an `icon_image_dark_theme` path pointing to this icon
-- **Source**: where the icon file was originally created (`iOS` = from iOS app assets, `style (created)` = SVG created in this repo)
+- **Source**: where the icon was originally created (`iOS` = from iOS app assets, `doxx-www` = created for web portal, `style (created)` = SVG created in this repo)
 
 ## Dns Block
 
@@ -28,9 +28,9 @@
 | <img src="event_types/dns_block/categories/privacy/privacy.svg" width="24" height="24"> | `privacy` |  |  |  | no | style (created) |
 | <img src="event_types/dns_block/categories/security/security.png" width="24" height="24"> | `security` | dns_block.security | Security | ![](https://img.shields.io/badge/-%20-FF4D6A) | yes | iOS |
 | <img src="event_types/dns_block/categories/social/social.png" width="24" height="24"> | `social` | dns_block.social | Social Media | ![](https://img.shields.io/badge/-%20-84CC16) | yes | iOS |
-| <img src="event_types/dns_block/categories/ssh/ssh-100.png" width="24" height="24"> | `ssh-100` |  |  |  | no | iOS |
-| <img src="event_types/dns_block/categories/ssh/ssh-50.png" width="24" height="24"> | `ssh-50` |  |  |  | no | iOS |
-| <img src="event_types/dns_block/categories/ssh/ssh-500.png" width="24" height="24"> | `ssh-500` |  |  |  | no | iOS |
+| <img src="event_types/dns_block/categories/ssh/ssh-100.png" width="24" height="24"> | `ssh-100` |  |  |  | no | doxx-www |
+| <img src="event_types/dns_block/categories/ssh/ssh-50.png" width="24" height="24"> | `ssh-50` |  |  |  | no | doxx-www |
+| <img src="event_types/dns_block/categories/ssh/ssh-500.png" width="24" height="24"> | `ssh-500` |  |  |  | no | doxx-www |
 | <img src="event_types/dns_block/categories/trackers/trackers.png" width="24" height="24"> | `trackers` | dns_block.tracking | Tracking & Analytics | ![](https://img.shields.io/badge/-%20-14B8A6) | yes | iOS |
 | <img src="event_types/dns_block/dns_block.png" width="24" height="24"> | `dns_block` | dns_block | DNS Block | ![](https://img.shields.io/badge/-%20-1BC1BC) | yes | iOS |
 
@@ -63,8 +63,8 @@
 | <img src="generic/censorship/censorship.png" width="24" height="24"> | `censorship` | generic.censorship | Censorship |  | yes | iOS |
 | <img src="generic/cert/cert.png" width="24" height="24"> | `cert` | generic.cert | Certificate |  | yes | iOS |
 | <img src="generic/connection_health/connection_health.png" width="24" height="24"> | `connection_health` | generic.connection_health | Connection Health |  | yes | iOS |
-| <img src="generic/connection_off/connection_off.png" width="24" height="24"> | `connection_off` |  |  |  | no | iOS |
-| <img src="generic/connection_on/connection_on.png" width="24" height="24"> | `connection_on` |  |  |  | no | iOS |
+| <img src="generic/connection_off/connection_off.png" width="24" height="24"> | `connection_off` |  |  |  | no | doxx-www |
+| <img src="generic/connection_on/connection_on.png" width="24" height="24"> | `connection_on` |  |  |  | no | doxx-www |
 | <img src="generic/content_filtering/content_filtering.png" width="24" height="24"> | `content_filtering` | blocklist_group.content_filtering | Content Filtering | ![](https://img.shields.io/badge/-%20-FFB84D) | yes | iOS |
 | <img src="generic/debug/debug.png" width="24" height="24"> | `debug` | generic.debug | Developer Debug | ![](https://img.shields.io/badge/-%20-FFD54F) | yes | iOS |
 | <img src="generic/deleteaccount/deleteaccount.png" width="24" height="24"> | `deleteaccount` | generic.deleteaccount | Delete Account |  | yes | iOS |
@@ -89,14 +89,14 @@
 | <img src="generic/reconnect/reconnect.png" width="24" height="24"> | `reconnect` | generic.reconnect | Connect on Startup |  | yes | iOS |
 | <img src="generic/recovery_codes/recovery_codes.png" width="24" height="24"> | `recovery_codes` | generic.recovery_codes | Recovery Codes | ![](https://img.shields.io/badge/-%20-FFFFFF) | yes | iOS |
 | <img src="generic/scattercast/scattercast.png" width="24" height="24"> | `scattercast` | generic.scattercast | Scattercast |  | yes | iOS |
-| <img src="generic/security_off/security_off.png" width="24" height="24"> | `security_off` |  |  |  | no | iOS |
-| <img src="generic/security_on/security_on.png" width="24" height="24"> | `security_on` |  |  |  | no | iOS |
-| <img src="generic/settings_off/settings_off.png" width="24" height="24"> | `settings_off` |  |  |  | no | iOS |
-| <img src="generic/settings_on/settings_on.png" width="24" height="24"> | `settings_on` |  |  |  | no | iOS |
+| <img src="generic/security_off/security_off.png" width="24" height="24"> | `security_off` |  |  |  | no | doxx-www |
+| <img src="generic/security_on/security_on.png" width="24" height="24"> | `security_on` |  |  |  | no | doxx-www |
+| <img src="generic/settings_off/settings_off.png" width="24" height="24"> | `settings_off` |  |  |  | no | doxx-www |
+| <img src="generic/settings_on/settings_on.png" width="24" height="24"> | `settings_on` |  |  |  | no | doxx-www |
 | <img src="generic/smartblocking/smartblocking.png" width="24" height="24"> | `smartblocking` | generic.smartblocking | Smart Blocking |  | yes | iOS |
 | <img src="generic/streaming/streaming.png" width="24" height="24"> | `streaming` | generic.streaming | Streaming |  | yes | iOS |
 | <img src="generic/subscription/subscription.png" width="24" height="24"> | `subscription` | generic.subscription | Subscription |  | yes | iOS |
-| <img src="generic/swipe_up/swipe_up.png" width="24" height="24"> | `swipe_up` |  |  |  | no | iOS |
+| <img src="generic/swipe_up/swipe_up.png" width="24" height="24"> | `swipe_up` |  |  |  | no | doxx-www |
 | <img src="generic/time_series/time_series.png" width="24" height="24"> | `time_series` | generic.time_series | Time Series |  | yes | iOS |
 | <img src="generic/tinfoil_hat/tinfoil_hat.png" width="24" height="24"> | `tinfoil_hat` | generic.tinfoil_hat | Tinfoil Hat |  | yes | iOS |
 | <img src="generic/token/token.png" width="24" height="24"> | `token` | generic.token | Your Token |  | yes | iOS |

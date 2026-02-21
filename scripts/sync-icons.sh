@@ -143,12 +143,23 @@ all_icons = sorted(
 )
 all_icons = [f for f in all_icons if f.endswith((".png", ".svg")) and "/svg/" not in f]
 
+# PNGs created for the web portal (not from iOS asset catalogs)
+DOXX_WWW_ICONS = {
+    "ssh-50", "ssh-100", "ssh-500",
+    "connection_off", "connection_on",
+    "security_off", "security_on",
+    "settings_off", "settings_on",
+    "swipe_up",
+}
+
 # Determine source origin for each icon
 def get_source(rel_path, full_path):
     """Infer where this icon was originally sourced from."""
     if full_path.endswith(".svg"):
         return "style (created)"
-    # PNGs originated from iOS app assets (copied via doxx-www)
+    name = os.path.splitext(os.path.basename(rel_path))[0]
+    if name in DOXX_WWW_ICONS:
+        return "doxx-www"
     return "iOS"
 
 # Try to match an icon file to stats_definitions metadata by path or by name convention
@@ -221,7 +232,7 @@ lines.append(f"- **{no_ref_count}** not yet referenced (need API update or are g
 lines.append("")
 lines.append("**Columns:**")
 lines.append("- **Stats Ref**: whether `stats_definitions.json` has an `icon_image_dark_theme` path pointing to this icon")
-lines.append("- **Source**: where the icon file was originally created (`iOS` = from iOS app assets, `style (created)` = SVG created in this repo)")
+lines.append("- **Source**: where the icon was originally created (`iOS` = from iOS app assets, `doxx-www` = created for web portal, `style (created)` = SVG created in this repo)")
 lines.append("")
 
 for group_name in sorted(group_lines.keys()):
