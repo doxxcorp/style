@@ -772,12 +772,12 @@ Retro-inspired color pairs for download/upload visualization:
 
 Discrete color bands for ICMP ping visualization (teal → yellow → red progression):
 
-| Color | Name | HEX | Swift | Latency Range |
-|-------|------|-----|-------|---------------|
-| ![](https://img.shields.io/badge/-%20-4DFFF8) | Bright Teal | `#4DFFF8` | `latencyBrightTeal` | < 50ms |
-| ![](https://img.shields.io/badge/-%20-1BC1BC) | Teal | `#1BC1BC` | `doxxAccentTeal` | 50-100ms |
-| ![](https://img.shields.io/badge/-%20-FFD54F) | Yellow | `#FFD54F` | `doxxAccentYellow` | 100-150ms |
-| ![](https://img.shields.io/badge/-%20-FF4D6A) | Red | `#FF4D6A` | `doxxAccentRed` | > 300ms |
+| Color | Name | HEX | Swift | CSS | Latency Range |
+|-------|------|-----|-------|-----|---------------|
+| ![](https://img.shields.io/badge/-%20-4DFFF8) | Bright Teal | `#4DFFF8` | `latencyBrightTeal` | `--color-latency-excellent` | < 50ms |
+| ![](https://img.shields.io/badge/-%20-1BC1BC) | Teal | `#1BC1BC` | `doxxAccentTeal` | `--color-latency-good` | 50-100ms |
+| ![](https://img.shields.io/badge/-%20-FFD54F) | Yellow | `#FFD54F` | `doxxAccentYellow` | `--color-latency-moderate` | 100-150ms |
+| ![](https://img.shields.io/badge/-%20-FF4D6A) | Red | `#FF4D6A` | `doxxAccentRed` | `--color-latency-poor` | > 300ms |
 
 *Note: 150-300ms range transitions smoothly from yellow to red.*
 
@@ -1175,6 +1175,48 @@ VStack(alignment: .leading, spacing: 8) {
 2. **Never use yellow/amber/brown for warnings.** Use `doxxAccentRed`.
 3. **Never use a shield icon or emoji** in any context.
 4. **Never hardcode icon paths.** All icons come from the `dn_stats_defs` database and are synced via `update-build-data.sh`.
+
+### Shared Icon File System
+
+The `style/shared_icons/` directory is the **canonical source** for all icon assets used across doxx.net clients (web, iOS, etc.).
+
+**Directory structure** mirrors the paths in `stats_definitions.json`:
+
+```
+shared_icons/
+├── event_types/
+│   ├── dns_block/
+│   │   ├── dns_block.png
+│   │   └── categories/
+│   │       ├── ads/ads.png
+│   │       ├── adult/adult.svg          ← new SVG icons
+│   │       ├── phishing/phishing.png
+│   │       └── ...
+│   └── security_event/
+│       ├── security_event.png
+│       ├── dangerious_port/dangerious_port.png
+│       ├── doh_blocked/doh_blocked.svg  ← new SVG icons
+│       └── ...
+├── generic/
+│   ├── fallback/fallback.png
+│   ├── smartblocking/smartblocking.png
+│   └── ...
+└── svg/                                  ← SVG source files
+```
+
+**Data flow:**
+- `infra.doxx.net` API serves **metadata** (`stats_definitions.json`: labels, colors, icon_type, icon paths)
+- `style/shared_icons/` holds the **actual icon files** (PNG + SVG)
+- doxx-www syncs icons from this repo via `make sync-styles` (rsync)
+- iOS sync is a future TODO
+
+**Adding new icons:**
+1. Create SVG in `shared_icons/svg/` (512x512, single color, thick stroke, transparent background)
+2. Copy to the appropriate `event_types/` or `generic/` subdirectory
+3. Run `scripts/sync-icons.sh` to audit and regenerate `CATALOG.md`
+4. Update `stats_definitions.json` in doxx-www to reference the new path
+
+**Audit script:** `scripts/sync-icons.sh` fetches `stats_definitions.json`, checks all referenced icons exist locally, and regenerates `shared_icons/CATALOG.md`.
 
 ---
 

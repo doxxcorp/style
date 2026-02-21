@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke="#EC4899" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <!-- mask outline -->
+    <path d="M96 180c0-50 72-100 160-100s160 50 160 100v80c0 100-72 180-160 180S96 360 96 260z"/>
+    <!-- left eye -->
+    <ellipse cx="196" cy="220" rx="40" ry="32"/>
+    <!-- right eye -->
+    <ellipse cx="316" cy="220" rx="40" ry="32"/>
+    <!-- smile -->
+    <path d="M186 320c30 40 110 40 140 0"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke="#8B5CF6" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <!-- eye outline -->
+    <path d="M64 256 C128 140, 384 140, 448 256 C384 372, 128 372, 64 256 Z"/>
+    <!-- pupil -->
+    <circle cx="256" cy="256" r="52"/>
+    <!-- diagonal slash -->
+    <line x1="100" y1="412" x2="412" y2="100"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke="#F5C122" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+    <!-- barrier (vertical wall with gap) -->
+    <line x1="256" y1="56" x2="256" y2="196"/>
+    <line x1="256" y1="316" x2="256" y2="456"/>
+    <!-- arrow through -->
+    <line x1="96" y1="256" x2="416" y2="256"/>
+    <polyline points="356,196 416,256 356,316"/>
+  </g>
+</svg>
