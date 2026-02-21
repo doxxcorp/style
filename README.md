@@ -1169,6 +1169,61 @@ VStack(alignment: .leading, spacing: 8) {
 )
 ```
 
+### Alert Banners (Tappable)
+
+For actionable alerts (e.g., settings conflicts, sync issues) that the user taps to resolve. Same visual treatment as warning boxes but with an action target and optional detail lines showing what differs.
+
+| Element | Value | Swift |
+|---------|-------|-------|
+| **Icon** | `settings_caution` (PNG from icon system) | `Image("settings_caution").renderingMode(.original)` |
+| **Background** | Red @ 10% opacity | `Color.doxxAccentRed.opacity(0.1)` |
+| **Border** | Red @ 30% opacity, 1pt | `.stroke(Color.doxxAccentRed.opacity(0.3), lineWidth: 1)` |
+| **Title** | White, `.subheadline.weight(.medium)` | `.foregroundColor(.white)` |
+| **Action hint** | Tertiary, `.caption` (e.g., "Tap to resolve") | `.foregroundColor(.doxxTextTertiary)` |
+| **Detail lines** | Tertiary, `.caption` (show what differs) | `.foregroundColor(.doxxTextTertiary)` |
+| **Corner radius** | 12pt | `.cornerRadius(12)` |
+| **Interaction** | `Button` with `.buttonStyle(PlainButtonStyle())` | Entire banner is tappable |
+
+```swift
+// ALERT BANNER: Tappable, shows what's different, routes user to resolution
+Button {
+    // Handle tap (show dialog, navigate, etc.)
+} label: {
+    VStack(alignment: .leading, spacing: 8) {
+        HStack(spacing: 8) {
+            Image("settings_caution")
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 24, height: 24)
+
+            Text("Alert title goes here")
+                .font(.subheadline.weight(.medium))
+                .foregroundColor(.white)
+
+            Spacer()
+
+            Text("Tap to resolve")
+                .font(.caption)
+                .foregroundColor(.doxxTextTertiary)
+        }
+
+        // Optional: show what's different
+        Text("Connect on Startup: On locally, Off on doxx.net")
+            .font(.caption)
+            .foregroundColor(.doxxTextTertiary)
+    }
+    .padding(12)
+    .background(Color.doxxAccentRed.opacity(0.1))
+    .cornerRadius(12)
+    .overlay(
+        RoundedRectangle(cornerRadius: 12)
+            .stroke(Color.doxxAccentRed.opacity(0.3), lineWidth: 1)
+    )
+}
+.buttonStyle(PlainButtonStyle())
+```
+
 ### AI Rules for Icons
 
 1. **Never use SF Symbol emoji as icons** in settings, warning boxes, or section headers. Use the database-driven icon system (`settings_*` or `category_*` assets). See `AI_CONTEXT/UPDATING-ICONS.md` for how to add new icons.
