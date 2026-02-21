@@ -217,7 +217,8 @@ for group_name in sorted(groups.keys()):
         else:
             stats_badge = "no"
             no_ref_count += 1
-        rows.append(f"| <img src=\"{rel}\" width=\"24\" height=\"24\"> | `{name}` | {et}{('.' + cat) if cat else ''} | {label} | {color_badge} | {stats_badge} | {source} |")
+        icon_html = f'<span style="background:#1a1a2e;border-radius:4px;padding:2px;display:inline-block"><img src="{rel}" width="24" height="24"></span>'
+        rows.append(f"| {icon_html} | `{name}` | {et}{('.' + cat) if cat else ''} | {label} | {color_badge} | {stats_badge} | {source} |")
     group_lines[group_name] = rows
 
 # Second pass: emit markdown with summary at top
