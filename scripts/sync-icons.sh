@@ -217,8 +217,7 @@ for group_name in sorted(groups.keys()):
         else:
             stats_badge = "no"
             no_ref_count += 1
-        icon_html = f'<span style="background:#1a1a2e;border-radius:4px;padding:2px;display:inline-block"><img src="{rel}" width="24" height="24"></span>'
-        rows.append(f"| {icon_html} | `{name}` | {et}{('.' + cat) if cat else ''} | {label} | {color_badge} | {stats_badge} | {source} |")
+        rows.append((rel, name, et, cat, label, color_badge, stats_badge, source))
     group_lines[group_name] = rows
 
 # Second pass: emit markdown with summary at top
@@ -240,9 +239,12 @@ for group_name in sorted(group_lines.keys()):
     nice_name = group_name.replace("event_types/", "").replace("_", " ").title()
     lines.append(f"## {nice_name}")
     lines.append("")
-    lines.append("| Icon | Name | Event Type | Label | Color | Stats Ref | Source |")
-    lines.append("|------|------|------------|-------|-------|-----------|--------|")
-    lines.extend(group_lines[group_name])
+    lines.append("<table>")
+    lines.append("<tr><th>Icon</th><th>Name</th><th>Event Type</th><th>Label</th><th>Color</th><th>Stats Ref</th><th>Source</th></tr>")
+    for rel, name, et, cat, label, color_badge, stats_badge, source in group_lines[group_name]:
+        et_cat = f"{et}.{cat}" if cat else et
+        lines.append(f'<tr><td bgcolor="#1a1a2e" align="center"><img src="{rel}" width="24" height="24"></td><td><code>{name}</code></td><td>{et_cat}</td><td>{label}</td><td>{color_badge}</td><td>{stats_badge}</td><td>{source}</td></tr>')
+    lines.append("</table>")
     lines.append("")
 
 with open(catalog_path, "w") as f:
