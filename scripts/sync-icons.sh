@@ -148,8 +148,8 @@ def get_source(rel_path, full_path):
     """Infer where this icon was originally sourced from."""
     if full_path.endswith(".svg"):
         return "style (created)"
-    # Icons under event_types/ or generic/ with .png were copied from doxx-www
-    return "doxx-www"
+    # PNGs originated from iOS app assets (copied via doxx-www)
+    return "iOS"
 
 # Try to match an icon file to stats_definitions metadata by path or by name convention
 def get_meta_for_icon(rel_path):
